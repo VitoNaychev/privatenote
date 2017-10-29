@@ -14,7 +14,7 @@ class CreateMessageController < ApplicationController
         puts text
         Database.create(:uid => $cur_uid, :text => text) 
         #redirect_back(fallback_location: "create_message")
-        render plain: "http://localhost:3000/read_message/#{$cur_uid}"
+        render plain: "https://private-note.herokuapp.com/read_message/#{$cur_uid}"
     end
 
     def get_free_uid

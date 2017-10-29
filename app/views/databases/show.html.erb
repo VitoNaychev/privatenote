@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @database.uid %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @database.text %>
+</p>
+
+<%= link_to 'Edit', edit_database_path(@database) %> |
+<%= link_to 'Back', databases_path %>
